@@ -1,25 +1,20 @@
 ---
 layout: default
-title: whymirror.github.com/hacketyhack
+title: Hackety Hack
 ---
 
 <div id="home">
-  <h1>hacketyhack</h1>
-
-  <p>
-  
-  
-  <h1>News</h1>
+  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  
-  <h1>Sticky</h1>
+
+  <h1>Links</h1> 
   <ul class="posts">
-    <!-- <li><span>30 Apr 2009</span> &raquo; <a href="http://link">link text</a></li> -->
+    <li><a href="http://github.com/steveklabnik/hacketyhack/">source:</a> All of the source code for Hackety Hack itself.</li>
   </ul>
- 
+
 </div>
-  
+

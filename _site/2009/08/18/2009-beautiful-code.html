@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Beautiful Code</title>
+    <meta name="author" content="Steve Klabnik" />
+    <link href="http://feeds2.feedburner.com/SteveKlabnik" rel="alternate" title="Steve Klabnik" type="application/atom+xml" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+  </head>
+  <body>
+
+    <div class="site" id="main">
+      <div class="title">
+        <a href="/">Steve Klabnik</a>
+        <a class="extra" href="/">home</a>
+      </div>
+
+      <div id="post">
+  <h1>Beautiful Code</h1>
+<p class="meta">18 Aug 2009</p>
+<p>As computers become more and more important in our lives, there is an increased demand for software. As the demand for software increases, there&#8217;s a corresponding demand for those who produce said software. As the number of programmers grows, it&#8217;s natural that those who are newly joining the ranks are not as good at coding as those who only did it for the love. One of the key differences between someone who is an excellent coder and one who is not is beautiful code. Those who strive for excellent software strive to make their code beautiful, and those who have not yet reached that level of excellence either do not appreciate code that is beautiful, or they don&#8217;t actively try to make their code beautiful.</p>
+<h2>The Times They Are A-Changin&#8217;</h2>
+<blockquote>
+<p>Come gather around people, wherever you roam<br />
+And admit that the waters around you have grown<br />
+And accept it that soon you&#8217;ll be drenched to the bone<br />
+If your time to you is worth savin&#8217;<br />
+Then you better start swimmin&#8217; or you&#8217;ll sink like a stone<br />
+For the times they are a-changin&#8217;</p>
+</blockquote>
+<p>I&#8217;m not here to decry this particular change. This has happened to every industry since the dawn of time. And there are always growing pains. The <a href="http://en.wikipedia.org/wiki/Eternal_September">Eternal September</a> happened long before I was on the Internet, so it&#8217;s not as if I&#8217;m not an interloper to the original Internet clique myself.</p>
+<h2>The 7 Aesthetic Universals</h2>
+<p>Dennis Dutton says that there are <a href="http://en.wikipedia.org/wiki/Aesthetics#Aesthetic_universals">seven universal singatures</a> that are commonly appealing to all people:</p>
+<blockquote>
+<p>1. Expertise or virtuosity. Technical artistic skills are cultivated, recognized, and admired.<br />
+2. Nonutilitarian pleasure. People enjoy art for art&#8217;s sake, and don&#8217;t demand that it keep them warm or put food on the table.<br />
+3. Style. Artistic objects and performances satisfy rules of composition that place them in a recognizable style.<br />
+4. Criticism. People make a point of judging, appreciating, and interpreting works of art.<br />
+5. Imitation. With a few important exceptions like music and abstract painting, works of art simulate experiences of the world.<br />
+6. Special focus. Art is set aside from ordinary life and made a dramatic focus of experience.<br />
+7. Imagination. Artists and their audiences entertain hypothetical worlds in the theater of the imagination.</p>
+</blockquote>
+<p>All of these universals can be applied to code.</p>
+<h3>Expertise</h3>
+<p>This is probably the most straightforward of all. Everyone admires code that is technically advanced. When you hear of someone writing a compiler or an operating system, some are impressed with the author&#8217;s abilities, but all appreciate the technical achievement. Many celebrities in the programming world have written a language or an os. Linus Torvalds, David Cox, Brian Kerrigan and Dennis Ritchie, Larry Wall, Bjarne Stroustrup, Matz, Guido van Rossum. The list goes on and on. These guys are famous becuase they&#8217;ve done something special, and made something that not everyone who&#8217;s a programmer can make. Well, I&#8217;d actually say that it&#8217;s not as hard as some would say, but still, your average IT intern writing VB.<span class="caps">NET</span> intranet applications isn&#8217;t going to spit out a C++ compiler. Not that intranet applications aren&#8217;t useful, or that they can&#8217;t be beautiful in their own right. I digress. We certainly respect technical achievement.</p>
+<h3>Nonutilitarian pleasure</h3>
+<p>You only need to look to the demoscene to find programs that are appreciated for nonutilitarian reasons. For those of you not familliar, the <a href="http://en.wikipedia.org/wiki/Demoscene">demoscene</a> is a small subculture of people who create programs called &#8216;demos.&#8217; Demos are programs that display interesting graphics and music on the screen for a certain period of time, like watching a video. The subculture started back in the early days of computer graphics, when any kind of real graphical display was technically impressive. The scene produced countless intense and impressive effects, and the tradition continues today. It&#8217;s not as popular, due to the increased resources that modern computers have at their disposal, but some in the scene just continue to use emulators for older processors, or even maintin old systems to develop demos on. In any case, demos are entirely non-interactive, they&#8217;re meant to be watched, and terminate upon completion of the display. They serve no function other than to look pretty, yet people derive a great amount of pleasure from them.</p>
+<p>Now, that&#8217;s the result of code, programs, but what about actual code itself? A good example of this is the International Obfuscated C Code Contest. The <a href="http://www.ioccc.org/"><span class="caps">IOCCC</span></a> has the following objectives:</p>
+<blockquote>
+<p>* To write the most Obscure/Obfuscated C program under the rules below.<br />
+ * To show the importance of programming style, in an ironic way.<br />
+ * To stress C compilers with unusual code.<br />
+ * To illustrate some of the subtleties of the C language.<br />
+ * To provide a safe forum for poor C code. :-)</p>
+</blockquote>
+<p>As you can see, there&#8217;s no actual demand for a program to be useful. While most of them are in some way, the emphasis is not on the utility of the code, but on how it looks, and how it makes you think about languages, programming style, and helping others with modifying your code later.</p>
+<h3>Style</h3>
+<p>Code can easily be categorized as being of a certain style. In a functional sense, coding can be structured, object oriented, or functional. We naturally categorize languages around these barriers, because they change the aesthetics of the code itself. A for loop that performs a summation and a reduce look totally different, but are functionally equivalent.</p>
+<p>From a look and feel perspective, there are other broad categories of languages and the style of code that they produce. There are C family languages, where there are tons of semicolons, there are whitespace significant languages, like Python. There are some languages with fairly peculiar syntax, such as Prolog. There&#8217;s Lisp&#8217;s pile of parentheses.</p>
+<p>There are also social elements with regards to style as well. The syntax of a language encourages a particular look and feel to the code, but people also come up with interesting conventions with which to dictate the style of code. This generally happens with larger projects, where many people will be working on the same code. For example, there is the <a href="http://www.gnu.org/prep/standards/standards.html"><span class="caps">GNU</span> coding standard</a>.</p>
+<h3>Criticism</h3>
+<p>There are countless instances of criticism of code. <a href="http://thedailywtf.com">The Daily <span class="caps">WTF</span></a> is a great example of general code criticism, but also see the <span class="caps">IOCCC</span> above. There&#8217;s also the <a href="http://en.wikipedia.org/wiki/Perl_Golf_Apocalypse">Perl Golf Apocalypse</a>, which showcases the shortest possible Perl code. There are <a href="http://en.wikipedia.org/wiki/Category:Programming_contests">similar programming competitions</a> for all manners of programming.</p>
+<h3>Imitation</h3>
+<p>With the excpetion of lower level languages imitating the way a physical machine works, I feel that programming fits with the &#8220;music&#8221; and &#8220;abstract painting&#8221; aspects of not really &#8220;simulating experiences of the world.&#8221; So we&#8217;ll just call this one the exception and move on.</p>
+<h3>Special focus</h3>
+<p>People certainly place a special focus on code. How many books exist on how to become a better plumber? Or how to use a hammer in a more effective manner? Or about the philosophical implications of how you went about filing your taxes this year? Programmers may code for a living, but they certainly still regard it as something that&#8217;s different from the mundane. There are many, many books written about how to improve your programming ability, or how to code for a certain domain, or to manage a software project. People put syntax on a pedastal; they talk about the experience of reading C family languages&#8217; semicolons as opposed to significant whitespace languages. It&#8217;s discussed in an abstract and aesthetically preferential way. Yes, a for loop can be functionally equivalent to a map, but some people prefer the aesthetic of one style verses another, and will debate the differences endlessly. People refer to programming as a &#8216;passion&#8217; or a &#8216;calling,&#8217; not as a &#8216;job.&#8217; For some, it certianly is a job, and it&#8217;s not always interesting or entertaining, but it&#8217;s certainly in a different class than manual labor.</p>
+<h3>Imagination</h3>
+<p>Code certainly &#8220;takes place&#8221; in an imaginary world. At first, most languages took place in a fairly non-imaginary setting: the machine. Machine code is the essence of concreate reality when programming: tell the <span class="caps">ALU</span> to do this, load a word from memory, modify the instruction pointer. However, as we move up the levels of abstraction, the details of the machine slowly melt away into the background, until we reach a complete alternate reality where the details of the machine are irrelevant. C started this journey into the imaginary. While still very true to the hardware, it is kind of a glue for how to structuring multiple assembly statements together. Very low level, very concerned with the details. But as we move towards higher and higher level languages, they diverge from the idea of what the machine wants. Take Haskell, for example. To code in Haskell is to ignore anything about the machine. You&#8217;re operating in a totally different world. You&#8217;re not describing how the computer should be doing the calculation; you&#8217;re describing the calculation itself. This kind of system has the opportunity to match the way that people think, rather than the way the computer thinks. You can argue if Haskell achieves this or not, but the possibility is at least there when we&#8217;re not bound by the limitations of the machine itself.</p>
+<h2>Why Beauty?</h2>
+<h2>An Example</h2>
+<p>I&#8217;ve run across one particular example of beautiful code that I feel embodies the idea well. It&#8217;s called ActiveMerchant, and it&#8217;s used to accept credit card payments with Ruby on Rails. Here&#8217;s the <a href="http://www.activemerchant.org/">sample code</a> that they provide:</p>
+<div>
+<pre>
+<code class='ruby'># Send requests to the gateway's test servers
+<p>ActiveMerchant::Billing::Base.mode = :test</p>
+<ol>
+	<li>Create a new credit card object<br />
+credit_card = ActiveMerchant::Billing::CreditCard.new(<br />
+  :number     =&gt; &#8216;4111111111111111&#8217;,<br />
+  :month      =&gt; &#8216;8&#8217;,<br />
+  :year       =&gt; &#8216;2009&#8217;,<br />
+  :first_name =&gt; &#8216;Tobias&#8217;,<br />
+  :last_name  =&gt; &#8216;Luetke&#8217;,<br />
+  :verification_value  =&gt; &#8216;123&#8217;	<br />
+)</li>
+</ol>
+<p>if credit_card.valid?</p>
+<ol>
+	<li>Create a gateway object to the TrustCommerce service<br />
+  gateway = ActiveMerchant::Billing::TrustCommerceGateway.new(<br />
+    :login    =&gt; &#8216;TestMerchant&#8217;,	<br />
+    :password =&gt; &#8216;password&#8217;<br />
+  )</li>
+</ol>
+<ol>
+	<li>Authorize for $10 dollars (1000 cents) <br />
+  response = gateway.authorize(1000, credit_card)</li>
+</ol>
+if response.success?
+<ol>
+	<li>Capture the money<br />
+    gateway.capture(1000, response.authorization)<br />
+  else<br />
+    raise StandardError, response.message <br />
+  end<br />
+end</code><br />
+  </pre><br />
+</div></li>
+</ol>
+<h2>How to Improve Your Code&#8217;s Beauty</h2>
+<h2>Let Me See Your Good Side</h2>
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+    <li><span>25 Aug 2009</span> &raquo; <a href="/2009/08/25/art-vs-science.html">Art vs. Science</a></li>
+    
+    <li><span>17 Mar 2009</span> &raquo; <a href="/2009/03/17/fundamentals-of-functional-programming.html">The Fundamentals of Functional Programming</a></li>
+    
+  </ul>
+</div>
+
+<div>
+	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/steveklabniksblog/embed.js"></script><noscript><a href="http://steveklabniksblog.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+				var links = document.getElementsByTagName('a');
+					var query = '?';
+						for(var i = 0; i < links.length; i++) {
+								if(links[i].href.indexOf('#disqus_thread') >= 0) {
+											query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+												}
+													}
+														document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/steveklabniksblog/get_num_replies.js' + query + '"></' + 'script>');
+														})();
+														//]]>
+													</script>
+</div>
+
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+          Steve Klabnik<br />
+          </p>
+          <p>Powered by <a href="http://github.com/mojombo/jekyll/tree/master">jekyll</a></p>
+        </div>
+        <div class="contact">
+          <p>
+          <a href="mailto:steve@steveklabnik.com">steve@steveklabnik.com</a>
+          </p>
+        </div>
+        <div class="rss">
+          <a href="http://feeds2.feedburner.com/SteveKlabnik">
+            <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!--
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-10289851-1");
+        pageTracker._trackPageview();
+        </script>
+
+        -->
+      </body>
+    </html>
+

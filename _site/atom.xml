@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Hackety Hack</title>
+ <link href="http://steveklabnik.github.com/hacketyhack/atom.xml" rel="self"/>
+ <link href="http://hackety-hack.com/"/>
+ <updated>2009-09-02T09:04:53-04:00</updated>
+ <id>http://steveklabnik.github.com/hacketyhack</id>
+ <author>
+   <name>Steve Klabnik</name>
+   <email>steve@steveklabnik.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to Hackety Hack</title>
+   <link href="http://steveklabnik.github.com/hacketyhack/2009/09/02/welcome-to-hackety.html"/>
+   <updated>2009-09-02T00:00:00-04:00</updated>
+   <id>http://steveklabnik.githu.com/hacketyhack/2009/09/02/welcome-to-hackety</id>
+   <content type="html">&lt;h1&gt;Welcome to Hackety Hack&lt;/h1&gt;
+&lt;p class=&quot;meta&quot;&gt;02 Sept 2009&lt;/p&gt;
+&lt;p&gt;Welcome to the new Hackety Hack site. For now, I&amp;#8217;m just putting this blog up here. New beginnings are exciting!&lt;/p&gt;
+&lt;h2&gt;Sorry!&lt;/h2&gt;
+&lt;p&gt;Unfortunatly, the version of Hackety that we&amp;#8217;re left with is woefully incomplete. So it&amp;#8217;s not really ready for anyone to use yet. Sorry about that. We&amp;#8217;re working on building Hackety as fast as we can. Hopefully, things will go well, and we&amp;#8217;ll be up and running soon.&lt;/p&gt;
+&lt;h2&gt;Where to go from here&lt;/h2&gt;
+&lt;p&gt;We&amp;#8217;re working on getting Hackety in a workable state as soon as possible. That&amp;#8217;s goal #1. Then, we&amp;#8217;ll be adding in features, such as the Lessons that are sadly gone. I&amp;#8217;ll try to keep everyone posted with updates as they happen.&lt;/p&gt;</content>
+ </entry>
+ 
+
+</feed>

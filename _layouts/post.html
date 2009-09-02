@@ -2,14 +2,32 @@
 layout: default
 ---
 <div id="post">
-{{ content }}
+  {{ content }}
 </div>
 
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+</div>
+
+<div>
+	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/hacketyhack/embed.js"></script><noscript><a href="http://hacketyhack.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+				var links = document.getElementsByTagName('a');
+					var query = '?';
+						for(var i = 0; i < links.length; i++) {
+								if(links[i].href.indexOf('#disqus_thread') >= 0) {
+											query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+												}
+													}
+														document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/hacketyhack/get_num_replies.js' + query + '"></' + 'script>');
+														})();
+														//]]>
+													</script>
 </div>

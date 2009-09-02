@@ -1,0 +1,18 @@
+---
+layout: post
+title: Welcome to Hackety Hack
+---
+
+h1. {{ page.title }}
+
+p(meta). 02 Sept 2009
+
+Welcome to the new Hackety Hack site. For now, I'm just putting this blog up here. New beginnings are exciting! 
+
+h2. Sorry!
+
+Unfortunatly, the version of Hackety that we're left with is woefully incomplete. So it's not really ready for anyone to use yet. Sorry about that. We're working on building Hackety as fast as we can. Hopefully, things will go well, and we'll be up and running soon.
+
+h2. Where to go from here
+
+We're working on getting Hackety in a workable state as soon as possible. That's goal #1. Then, we'll be adding in features, such as the Lessons that are sadly gone. I'll try to keep everyone posted with updates as they happen.
